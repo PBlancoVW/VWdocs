@@ -3,6 +3,7 @@
 - [**Let's start**](/About/)
   - [Quick start](/About/QuickStart.md)
   - [Markdown tips](/About/Markdown/tips.md)
+  - [List of emojis](/About/Markdown/emojis.md)
 - [**Engineering**](/Engineering/)
   - [The code](/Engineering/TheCode/)
   - [Perforce](/Engineering/Perforce/)
