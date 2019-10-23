@@ -4,6 +4,7 @@
   - [Quick start](/About/QuickStart.md)
   - [Markdown tips](/About/Markdown/tips.md)
   - [List of emojis](/About/Markdown/emojis.md)
+  - [Configuration](/About/Configuration.md)
 - [**Engineering**](/Engineering/)
   - [The code](/Engineering/TheCode/)
   - [Perforce](/Engineering/Perforce/)
