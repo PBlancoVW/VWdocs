@@ -6,6 +6,7 @@
   - [List of emojis](/About/Markdown/emojis.md)
   - [Configuration](/About/Configuration.md)
 - [**Engineering**](/Engineering/)
+  - [Getting Started](/Engineering/GettingStarted/)
   - [The code](/Engineering/TheCode/)
   - [Perforce](/Engineering/Perforce/)
   - [Jira](/Engineering/Jira/)
