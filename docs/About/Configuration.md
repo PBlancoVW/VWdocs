@@ -5,7 +5,7 @@
 #### Click to change between dark and light mode
 
 <div class="change-theme-button">
-  <input type="image" src="../_media/contrast-circle.png" style="height:20px;width:20px"/>
+  <input type="image" src="_media/contrast-circle.png" style="height:20px;width:20px"/>
 </div>
 
 #### Click to preview other themes
