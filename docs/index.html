@@ -21,17 +21,17 @@
 			coverpage: true,
 			onlyCover: true,
 			search: 'auto',
+			formatUpdated: '{YYYY}/{MM}/{DD} {HH}:{mm}',
 			executeScript: true,
 			plugins: [
 				function(hook, vm) {
 					hook.beforeEach(function(html) {
-						var url = 
-								'https://github.com/PBlancoVW/vwdocu/tree/master/docs/' +
-								vm.route.file;
-						var editHtml = '[📝 EDIT DOCUMENT](' + url + ')';
+						var url = 'https://github.com/PBlancoVW/vwdocu/tree/master/docs/' + vm.route.file;
+						var editHtml = '<a href="' + url + '" style="float: right">📝 EDIT DOCUMENT</a>';
 						return (
 							html +
-							'\n----\n' +
+							'\n<hr/>' +
+							'Last modified: {docsify-updated}' +
 							editHtml
 						);
 					});
