@@ -49,25 +49,26 @@
 					});
 				},
 				<!-- Compress and expand side bar -->
-				function(hook, vm) {
-					hook.doneEach(function() {
-						var activeLI = document.querySelector(".sidebar-nav li.active"); <!-- LI (list item) -->
-						document.querySelectorAll(".sidebar-nav > ul > li").forEach(
-							function(node, index, nodelist) {
-								<!-- compress ULs (unordered lists) that are not active -->
-								if(node.lastChild && node.lastChild.nodeName === "UL" && !node.isSameNode(activeLI))
-									node.lastChild.style.display = "none";
-							}
-						);
-						if (activeLI) {
-							<!-- expand parent and last child (these are UL) of active LI -->
-							if(activeLI.parentElement)
-								activeLI.parentElement.style.display = "block";
-							if(activeLI.lastChild && node.lastChild.nodeName === "UL")
-								activeLI.lastChild.style.display = "block";
-						}
-					});
-				}
+				<!-- I'll comment this out for now. It can be added and improved once there are more items in the sidebar -->
+				<!-- function(hook, vm) { -->
+					<!-- hook.doneEach(function() { -->
+						<!-- var activeLI = document.querySelector(".sidebar-nav li.active"); <!-- LI (list item) --> -->
+						<!-- document.querySelectorAll(".sidebar-nav > ul > li").forEach( -->
+							<!-- function(node, index, nodelist) { -->
+								<!-- <!-- compress ULs (unordered lists) that are not active --> -->
+								<!-- if(node.lastChild && node.lastChild.nodeName === "UL" && !node.isSameNode(activeLI)) -->
+									<!-- node.lastChild.style.display = "none"; -->
+							<!-- } -->
+						<!-- ); -->
+						<!-- if (activeLI) { -->
+							<!-- <!-- expand parent and last child (these are UL) of active LI --> -->
+							<!-- if(activeLI.parentElement) -->
+								<!-- activeLI.parentElement.style.display = "block"; -->
+							<!-- if(activeLI.lastChild && node.lastChild.nodeName === "UL") -->
+								<!-- activeLI.lastChild.style.display = "block"; -->
+						<!-- } -->
+					<!-- }); -->
+				<!-- } -->
 			]
 		}
 	</script>
